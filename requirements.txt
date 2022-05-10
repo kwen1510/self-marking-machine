@@ -1,0 +1,6 @@
+sentence-transformers
+yake
+transformers
+pandas
+torch
+scikit-learn
