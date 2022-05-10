@@ -1,5 +1,4 @@
 sentence-transformers
-yake
 transformers
 pandas
 torch
