@@ -10,8 +10,8 @@ from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch
 
 
-# Library for keyword extraction
-import yake
+# # Library for keyword extraction
+# import yake
 
 
 # Load models and tokenisers for both sentence transformers and text classification
@@ -103,20 +103,20 @@ if sidebar_selectbox == "Compare two sentences":
               st.write(text_classification_model.config.id2label[2], ":", round(outputs[0][2].item()*100,2),"%")
 
 
-              ### Extract keywords with YAKE ### (might make more sense with word cloud)
+#               ### Extract keywords with YAKE ### (might make more sense with word cloud)
 
-              st.subheader("Keywords:")
+#               st.subheader("Keywords:")
 
-              kw_extractor = yake.KeywordExtractor(top=10, stopwords=None)
-              keywords = kw_extractor.extract_keywords(sentence_2)
+#               kw_extractor = yake.KeywordExtractor(top=10, stopwords=None)
+#               keywords = kw_extractor.extract_keywords(sentence_2)
 
-              # keywords_array = []
+#               # keywords_array = []
 
-              for kw, v in keywords:
-                # print("Keyphrase: ", kw, ": score", v)
-                # keywords_array.append(kw)
+#               for kw, v in keywords:
+#                 # print("Keyphrase: ", kw, ": score", v)
+#                 # keywords_array.append(kw)
 
-                st.write(kw)
+#                 st.write(kw)
 
 
 
